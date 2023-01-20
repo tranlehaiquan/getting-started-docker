@@ -1,12 +1,8 @@
 services:
   app:
     image: tranlehaiquan/getting-started:latest
-    # command: sh -c "yarn install && yarn run dev"
     ports:
-      - 3000:3000
-    working_dir: /app
-    volumes:
-      - ./:/app
+      - 3000:3000x
     environment:
       MYSQL_HOST: mysql
       MYSQL_USER: root
